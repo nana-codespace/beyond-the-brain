@@ -1,0 +1,506 @@
+/* GENERAL WEBSITE STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #07182e;
+    color: #ffffff;
+    line-height: 1.6;
+}
+/* NAVIGATION BAR */
+
+header {
+    background-color: #0d2542;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #d4af37;
+}
+
+header h2 {
+    color: #d4af37;
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+/* WELCOME SECTION */
+
+#home {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.subtitle {
+    color: #d4af37;
+    letter-spacing: 4px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+#home h1 {
+    font-size: 65px;
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+#home h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.profession {
+    color: #d4af37;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.welcome-text {
+    max-width: 650px;
+    font-size: 17px;
+    color: #dce3ec;
+    margin-bottom: 30px;
+    line-height: 1.8;
+}
+/* SURPRISE BUTTON */
+
+button {
+    background-color: #d4af37;
+    color: #07182e;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ffffff;
+    transform: scale(1.05);
+}
+/* WELCOME SECTION DECORATION */
+
+#home::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: #d4af37;
+    margin-top: 35px;
+    border-radius: 5px;
+}
+/* GLOWING NEUROSCIENCE EFFECT */
+
+#home h1 {
+    text-shadow: 0 0 10px rgba(212, 175, 55, 0.4);
+    animation: brainGlow 3s infinite alternate;
+}
+
+@keyframes brainGlow {
+    from {
+        text-shadow: 0 0 5px rgba(212, 175, 55, 0.3);
+    }
+
+    to {
+        text-shadow: 0 0 25px rgba(212, 175, 55, 0.9);
+    }
+}
+/* ABOUT SECTION */
+
+#about {
+    padding: 100px 12%;
+    text-align: center;
+    background-color: #0d2542;
+    border-top: 1px solid #d4af37;
+}
+
+#about h2 {
+    color: #d4af37;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#about p:not(.subtitle) {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    color: #dce3ec;
+    font-size: 17px;
+    line-height: 1.9;
+}
+/* NEUROSCIENCE SECTION */
+
+#neuroscience {
+    padding: 100px 12%;
+    text-align: center;
+    background-color: #07182e;
+    border-top: 1px solid #d4af37;
+}
+
+#neuroscience h2 {
+    color: #d4af37;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#neuroscience p:not(.subtitle) {
+    max-width: 750px;
+    margin: 0 auto 20px;
+    color: #dce3ec;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.neuroscience-quote {
+    font-style: italic;
+    color: #d4af37 !important;
+    margin-top: 35px !important;
+}
+/* DIGITAL BOOKSHELF */
+
+#bookshelf {
+    padding: 100px 10%;
+    text-align: center;
+    background-color: #0d2542;
+    border-top: 1px solid #d4af37;
+}
+
+#bookshelf h2 {
+    color: #d4af37;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.books-intro {
+    color: #dce3ec;
+    margin-bottom: 40px;
+    font-size: 17px;
+}
+
+.book-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.book-card {
+    background-color: #07182e;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    padding: 30px;
+    width: 300px;
+    transition: 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 25px rgba(212, 175, 55, 0.2);
+}
+
+.book-card h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.book-card .author {
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.book-card p {
+    color: #dce3ec;
+    line-height: 1.7;
+}
+/* FINAL APPRECIATION SECTION */
+
+#appreciation {
+    padding: 100px 12%;
+    text-align: center;
+    background-color: #07182e;
+    border-top: 1px solid #d4af37;
+}
+
+#appreciation h2 {
+    color: #d4af37;
+    font-size: 35px;
+    margin-bottom: 35px;
+}
+
+#appreciation p:not(.subtitle) {
+    max-width: 750px;
+    margin: 0 auto 22px;
+    color: #dce3ec;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+#appreciation h3 {
+    color: #d4af37;
+    font-size: 24px;
+    margin-top: 35px;
+}
+
+#appreciation .signature {
+    margin-top: 20px;
+    font-style: italic;
+}
+/* SMOOTH WEBSITE NAVIGATION */
+
+html {
+    scroll-behavior: smooth;
+}
+/* RESPONSIVE DESIGN FOR MOBILE DEVICES */
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+
+    #home h1 {
+        font-size: 42px;
+    }
+
+    #home h2 {
+        font-size: 23px;
+    }
+    .timeline {
+    padding-left: 20px;
+}
+
+.timeline-item {
+    padding: 20px;
+}
+
+.timeline-item h3 {
+    font-size: 19px;
+}
+
+    #about,
+#neuroscience,
+#journey,
+#mind,
+#bookshelf,
+#appreciation {
+    padding: 70px 7%;
+}
+
+    #about h2,
+#neuroscience h2,
+#journey h2,
+#mind h2,
+#bookshelf h2,
+#appreciation h2 {
+    font-size: 28px;
+}
+
+    .book-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+/* BRAIN FACTS FEATURE */
+
+.brain-facts {
+    max-width: 650px;
+    margin: 45px auto 0;
+    padding: 30px;
+    border: 1px solid #d4af37;
+    border-radius: 15px;
+    background-color: #0d2542;
+}
+
+.brain-facts h3 {
+    color: #d4af37;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+#brainFact {
+    color: #dce3ec;
+    margin-bottom: 25px;
+}
+/* NEUROSURGERY TIMELINE */
+
+#journey {
+    padding: 100px 12%;
+    text-align: center;
+    background-color: #0d2542;
+    border-top: 1px solid #d4af37;
+}
+
+#journey h2 {
+    color: #d4af37;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.journey-intro {
+    max-width: 750px;
+    margin: 0 auto 50px;
+    color: #dce3ec;
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+.timeline {
+    max-width: 750px;
+    margin: auto;
+    border-left: 3px solid #d4af37;
+    text-align: left;
+    padding-left: 35px;
+}
+
+.timeline-item {
+    background-color: #07182e;
+    border: 1px solid #d4af37;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.timeline-item:hover {
+    transform: translateX(8px);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+}
+
+.timeline-item h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.timeline-item p {
+    color: #dce3ec;
+    line-height: 1.8;
+}
+/* WELCOME PAGE ANIMATION */
+
+@keyframes welcomeReveal {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#home .subtitle,
+#home h2,
+#home .profession,
+#home .welcome-text,
+#home button {
+    animation: welcomeReveal 1.2s ease both;
+}
+
+#home .subtitle {
+    animation-delay: 0.3s;
+}
+
+#home h2 {
+    animation-delay: 0.6s;
+}
+
+#home .profession {
+    animation-delay: 0.9s;
+}
+
+#home .welcome-text {
+    animation-delay: 1.2s;
+}
+
+#home button {
+    animation-delay: 1.5s;
+}
+/* BRAIN IMAGE STYLING */
+
+.brain-image {
+    display: block;
+    width: 280px;
+    max-width: 90%;
+    height: auto;
+    margin: 30px auto;
+    border: 2px solid #d4af37;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.2);
+}
+/* THE MIND BEHIND THE MISSION */
+
+#mind {
+    padding: 100px 12%;
+    text-align: center;
+    background-color: #07182e;
+    border-top: 1px solid #d4af37;
+}
+
+#mind h2 {
+    color: #d4af37;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+#mind p:not(.subtitle) {
+    max-width: 800px;
+    margin: 20px auto;
+    color: #dce3ec;
+    font-size: 17px;
+    line-height: 1.9;
+}
+/* DIGITAL BOOK READER BUTTON */
+
+.read-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #d4af37;
+    color: #07182e;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.read-button:hover {
+    background-color: #ffffff;
+    transform: translateY(-3px);
+}
